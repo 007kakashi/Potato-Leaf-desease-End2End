@@ -238,3 +238,169 @@ Traceback (most recent call last):
   File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\zipfile.py", line 1366, in _RealGetContents
     raise BadZipFile("File is not a zip file")
 zipfile.BadZipFile: File is not a zip file
+[2023-10-15 12:07:51,128: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 12:07:51,158: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 12:07:51,158: INFO: common: created directory at: artifacts]
+[2023-10-15 12:07:51,166: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-15 12:07:57,802: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-15 12:09:11,408: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 12:09:11,424: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 12:09:11,424: INFO: common: created directory at: artifacts]
+[2023-10-15 12:09:11,432: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 12:09:11,443: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 12:11:08,243: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 12:11:08,259: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 12:11:08,266: INFO: common: created directory at: artifacts]
+[2023-10-15 12:11:08,274: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 12:11:08,274: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 12:13:17,395: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 12:13:17,403: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 12:13:17,411: INFO: common: created directory at: artifacts]
+[2023-10-15 12:13:17,411: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 12:13:17,422: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 12:13:17,430: INFO: common: created directory at: artifacts\training]
+[2023-10-15 12:13:23,582: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 12:13:23,590: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 12:13:23,590: INFO: common: created directory at: artifacts]
+[2023-10-15 12:13:23,598: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 12:13:23,606: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 12:13:23,606: INFO: common: created directory at: artifacts\training]
+[2023-10-15 12:15:08,570: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 12:15:08,578: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 12:15:08,586: INFO: common: created directory at: artifacts]
+[2023-10-15 12:15:08,594: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 12:15:08,594: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 12:15:08,602: INFO: common: created directory at: artifacts\training]
+[2023-10-15 12:23:02,402: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 12:23:02,427: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 12:23:02,456: INFO: common: created directory at: artifacts]
+[2023-10-15 12:23:02,470: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 12:23:02,476: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 12:23:02,567: INFO: common: created directory at: artifacts\training]
+[2023-10-15 12:26:35,563: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 12:26:35,574: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 12:26:35,580: INFO: common: created directory at: artifacts]
+[2023-10-15 12:26:35,586: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-15 12:26:46,553: INFO: 1170291011: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 21137678
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "3018953fda39d25f745a547addfd47d653799e3f5dfaaeca8a1c3e778fc37d06"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 7D5A:D8C7B:BEE31:14EB29:652B8D23
+Accept-Ranges: bytes
+Date: Sun, 15 Oct 2023 06:56:38 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100031-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1697352997.826741,VS0,VE1281
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: be32b5535950a26695644201432d6d72781223d4
+Expires: Sun, 15 Oct 2023 07:01:38 GMT
+Source-Age: 1
+
+]
+[2023-10-15 12:28:19,295: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 12:28:19,304: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 12:28:19,309: INFO: common: created directory at: artifacts]
+[2023-10-15 12:28:19,319: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-15 12:28:24,066: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 12:28:24,081: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 12:28:24,086: INFO: common: created directory at: artifacts]
+[2023-10-15 12:28:24,099: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 12:28:24,106: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 12:28:24,845: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-15 12:29:22,900: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 12:29:22,930: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 12:29:22,944: INFO: common: created directory at: artifacts]
+[2023-10-15 12:29:22,959: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 12:29:22,966: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 12:29:23,087: INFO: common: created directory at: artifacts\training]
+[2023-10-15 12:58:58,729: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 12:58:58,741: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 12:58:58,746: INFO: common: created directory at: artifacts]
+[2023-10-15 13:00:00,638: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 13:00:00,647: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 13:00:00,655: INFO: common: created directory at: artifacts]
+[2023-10-15 13:09:01,575: INFO: common: json file saved at: scores.json]
+[2023-10-15 13:10:46,979: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-15 13:10:46,985: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 13:10:46,988: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 13:10:46,993: INFO: common: created directory at: artifacts]
+[2023-10-15 13:10:46,993: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-15 13:10:46,998: INFO: data_ingestion: File already exists of size: ~ 20642 KB]
+[2023-10-15 13:10:53,253: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-15 13:10:53,263: INFO: main: *******************]
+[2023-10-15 13:10:53,308: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-10-15 13:10:53,344: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 13:10:53,394: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 13:10:53,414: INFO: common: created directory at: artifacts]
+[2023-10-15 13:10:53,444: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-15 13:10:56,919: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-15 13:11:00,186: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-10-15 13:11:00,191: INFO: main: *******************]
+[2023-10-15 13:11:00,196: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-10-15 13:11:00,231: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 13:11:00,246: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 13:11:00,251: INFO: common: created directory at: artifacts]
+[2023-10-15 13:11:00,251: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 13:11:00,261: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 13:11:00,301: INFO: common: created directory at: artifacts\training]
+[2023-10-15 13:35:41,306: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-10-15 13:35:41,341: INFO: main: *******************]
+[2023-10-15 13:35:41,341: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-10-15 13:35:41,611: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 13:35:41,637: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 13:35:41,647: INFO: common: created directory at: artifacts]
+[2023-10-15 13:42:29,969: INFO: common: json file saved at: scores.json]
+[2023-10-15 13:42:29,972: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-10-15 13:43:41,402: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-15 13:43:41,412: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-15 13:43:49,960: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:43:49] "GET / HTTP/1.1" 200 -]
+[2023-10-15 13:45:14,779: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:45:14] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:46:43,045: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:46:43] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:46:54,773: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:46:54] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:47:39,370: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:47:39] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:47:55,724: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:47:55] "GET / HTTP/1.1" 200 -]
+[2023-10-15 13:48:07,990: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000002B0F8E68EA0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-15 13:48:08,002: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:48:08] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:48:19,442: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000002B0803B1800> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-15 13:48:19,457: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:48:19] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:50:45,841: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:50:45] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:52:52,753: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:52:52] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:53:11,422: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:53:11] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:54:25,291: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:54:25] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:55:07,016: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-15 13:55:07,021: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-15 13:55:13,918: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:55:13] "GET / HTTP/1.1" 200 -]
+[2023-10-15 13:55:29,326: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:55:29] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:55:45,417: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:55:45] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:55:59,843: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:55:59] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:56:17,041: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:56:17] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:57:01,159: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:57:01] "GET / HTTP/1.1" 200 -]
+[2023-10-15 13:57:13,791: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001FAC6778F40> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-15 13:57:13,806: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:57:13] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 13:57:29,166: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001FAC80B18A0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-15 13:57:29,181: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 13:57:29] "POST /predict HTTP/1.1" 200 -]
