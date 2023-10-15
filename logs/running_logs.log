@@ -1,0 +1,240 @@
+[2023-10-15 10:05:13,060: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-15 10:05:13,103: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 10:05:13,145: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 10:05:13,153: INFO: common: created directory at: artifacts]
+[2023-10-15 10:05:13,170: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-15 10:05:19,540: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 9982:15F91D:44413:82C62:652B6C00
+Accept-Ranges: bytes
+Date: Sun, 15 Oct 2023 04:35:15 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100021-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1697344514.170096,VS0,VE922
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: ad25a8b88f0184e9c5ccabef01c6c490d23a06ff
+Expires: Sun, 15 Oct 2023 04:40:15 GMT
+Source-Age: 1
+
+]
+[2023-10-15 10:05:21,662: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-15 10:05:21,662: INFO: main: *******************]
+[2023-10-15 10:05:21,662: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-10-15 10:05:21,670: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 10:05:21,695: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 10:05:21,721: INFO: common: created directory at: artifacts]
+[2023-10-15 10:05:21,747: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-15 10:05:25,144: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-15 10:05:28,029: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-10-15 10:05:28,029: INFO: main: *******************]
+[2023-10-15 10:05:28,029: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-10-15 10:05:28,029: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 10:05:28,045: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 10:05:28,045: INFO: common: created directory at: artifacts]
+[2023-10-15 10:05:28,061: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 10:05:28,070: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 10:05:28,075: ERROR: main: 'WindowsPath' object has no attribute 'endswith']
+Traceback (most recent call last):
+  File "C:\ML Projects\Chicken-Disease-Classification-Projects\main.py", line 40, in <module>
+    model_trainer.main()
+  File "c:\ml projects\chicken-disease-classification-projects\src\cnnClassifier\pipeline\stage_03_training.py", line 19, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\ml projects\chicken-disease-classification-projects\src\cnnClassifier\components\prepare_callbacks.py", line 36, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "c:\ml projects\chicken-disease-classification-projects\src\cnnClassifier\components\prepare_callbacks.py", line 27, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+                    ^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
+[2023-10-15 10:34:10,927: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 10:34:10,967: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 10:34:10,975: INFO: common: created directory at: artifacts]
+[2023-10-15 10:34:10,983: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-15 10:34:10,991: INFO: 1170291011: File already exists of size: ~ 11345 KB]
+[2023-10-15 10:36:41,911: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 10:36:41,927: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 10:36:41,927: INFO: common: created directory at: artifacts]
+[2023-10-15 10:36:41,935: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-15 10:36:45,804: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-15 10:38:03,495: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 10:38:03,511: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 10:38:03,519: INFO: common: created directory at: artifacts]
+[2023-10-15 10:38:03,527: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 10:38:03,535: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 10:47:11,541: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 10:47:11,549: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 10:47:11,555: INFO: common: created directory at: artifacts]
+[2023-10-15 10:47:11,555: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 10:47:11,563: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 10:47:30,538: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 10:47:30,546: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 10:47:30,546: INFO: common: created directory at: artifacts]
+[2023-10-15 10:47:30,554: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 10:47:30,562: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 10:53:31,164: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-15 10:53:31,180: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 10:53:31,188: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 10:53:31,188: INFO: common: created directory at: artifacts]
+[2023-10-15 10:53:31,188: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-15 10:53:31,196: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2023-10-15 10:53:34,087: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-15 10:53:34,087: INFO: main: *******************]
+[2023-10-15 10:53:34,087: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-10-15 10:53:34,102: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 10:53:34,102: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 10:53:34,102: INFO: common: created directory at: artifacts]
+[2023-10-15 10:53:34,102: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-15 10:53:37,183: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-15 10:53:40,648: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-10-15 10:53:40,648: INFO: main: *******************]
+[2023-10-15 10:53:40,648: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-10-15 10:53:40,648: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 10:53:40,666: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 10:53:40,666: INFO: common: created directory at: artifacts]
+[2023-10-15 10:53:40,666: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-15 10:53:40,674: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-15 10:53:40,682: INFO: common: created directory at: artifacts\training]
+[2023-10-15 11:01:49,144: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-10-15 11:01:49,160: INFO: main: *******************]
+[2023-10-15 11:01:49,160: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-10-15 11:01:49,277: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 11:01:49,297: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 11:01:49,313: INFO: common: created directory at: artifacts]
+[2023-10-15 11:04:25,443: INFO: common: json file saved at: scores.json]
+[2023-10-15 11:04:25,443: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-10-15 11:17:52,249: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-15 11:17:52,257: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-15 11:18:19,874: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 11:18:19] "GET / HTTP/1.1" 200 -]
+[2023-10-15 11:20:09,375: INFO: _internal: 192.168.0.121 - - [15/Oct/2023 11:20:09] "POST /predict HTTP/1.1" 200 -]
+[2023-10-15 11:22:18,241: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-15 11:22:18,259: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 11:22:18,278: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 11:22:18,278: INFO: common: created directory at: artifacts]
+[2023-10-15 11:22:18,286: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-15 11:22:19,711: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Sun, 15 Oct 2023 05:52:19 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=511=BrPqwRG5xX1CfOp-twLYE3QfT7pFfaFoSXmlrvlehNN_DRvGrM0duQtTPfxM6oso10Vi2IZxEq5RR4nvz5Jp3oXveNKUbuO4CrXNKOvJ2mM09MlQp6U70vFlKcB5BubroErmTLbRW4VUPBpxYyY41TY2hcQTwz-JynHfLJym6ro; expires=Mon, 15-Apr-2024 05:52:19 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2023-10-15 11:22:20,358: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\ML Projects\Chicken-Disease-Classification-Projects\main.py", line 12, in <module>
+    data_ingestion.main()
+  File "c:\ml projects\chicken-disease-classification-projects\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "c:\ml projects\chicken-disease-classification-projects\src\cnnClassifier\components\data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\zipfile.py", line 1299, in __init__
+    self._RealGetContents()
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\zipfile.py", line 1366, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2023-10-15 11:41:17,687: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-15 11:41:17,703: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 11:41:17,735: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 11:41:17,743: INFO: common: created directory at: artifacts]
+[2023-10-15 11:41:17,751: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-15 11:41:17,759: INFO: data_ingestion: File already exists of size: ~ 82 KB]
+[2023-10-15 11:41:17,782: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\main.py", line 12, in <module>
+    data_ingestion.main()
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\components\data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\zipfile.py", line 1299, in __init__
+    self._RealGetContents()
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\zipfile.py", line 1366, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2023-10-15 11:43:38,108: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-15 11:43:38,117: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 11:43:38,124: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 11:43:38,124: INFO: common: created directory at: artifacts]
+[2023-10-15 11:43:38,134: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-15 11:43:38,136: INFO: data_ingestion: File already exists of size: ~ 82 KB]
+[2023-10-15 11:43:38,144: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\main.py", line 12, in <module>
+    data_ingestion.main()
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\components\data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\zipfile.py", line 1299, in __init__
+    self._RealGetContents()
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\zipfile.py", line 1366, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2023-10-15 11:49:40,525: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-15 11:49:40,552: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-15 11:49:40,560: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-15 11:49:40,568: INFO: common: created directory at: artifacts]
+[2023-10-15 11:49:40,568: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-15 11:49:40,576: INFO: data_ingestion: File already exists of size: ~ 82 KB]
+[2023-10-15 11:49:40,593: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\main.py", line 12, in <module>
+    data_ingestion.main()
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\components\data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\zipfile.py", line 1299, in __init__
+    self._RealGetContents()
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\zipfile.py", line 1366, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
