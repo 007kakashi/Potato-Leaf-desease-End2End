@@ -916,3 +916,30 @@ x==========x]
 [2023-10-16 12:04:59,061: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001A60F19B9C0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
 [2023-10-16 12:04:59,076: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:04:59] "POST /predict HTTP/1.1" 200 -]
 [2023-10-16 12:05:15,107: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:05:15] "POST /predict HTTP/1.1" 200 -]
+[2023-10-16 12:16:25,534: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-16 12:16:25,535: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-16 12:16:32,276: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:16:32] "GET / HTTP/1.1" 200 -]
+[2023-10-16 12:23:47,756: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-16 12:23:47,760: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-16 12:24:54,140: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:24:54] "GET / HTTP/1.1" 200 -]
+[2023-10-16 12:25:07,909: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:25:07] "POST /predict HTTP/1.1" 200 -]
+[2023-10-16 12:25:26,101: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:25:26] "POST /predict HTTP/1.1" 200 -]
+[2023-10-16 12:26:14,275: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:26:14] "GET / HTTP/1.1" 200 -]
+[2023-10-16 12:26:24,729: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:26:24] "POST /predict HTTP/1.1" 200 -]
+[2023-10-16 12:27:07,775: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:27:07] "POST /predict HTTP/1.1" 200 -]
+[2023-10-16 12:27:10,836: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:27:10] "GET / HTTP/1.1" 200 -]
+[2023-10-16 12:27:21,674: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001E508A137E0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-16 12:27:21,674: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:27:21] "POST /predict HTTP/1.1" 200 -]
+[2023-10-16 12:28:19,404: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-16 12:28:19,404: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-16 12:28:24,678: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:28:24] "GET / HTTP/1.1" 200 -]
+[2023-10-16 12:28:37,984: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 12:28:37] "POST /predict HTTP/1.1" 200 -]

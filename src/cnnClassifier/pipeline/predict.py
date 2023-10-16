@@ -24,11 +24,11 @@ class PredictionPipeline:
 
         if result[0] == 0:
             prediction = 'Healthy'
-            return [{ "image" : prediction}]
+            return [f'image : {prediction}']
         elif result[0] == 1:
             prediction = 'Early Blight'
             return [f'image : {prediction}']
         else:
             prediction = 'Late Blight'
-            return [{ "image" : prediction}]
+            return [f'image : {prediction}']
 
