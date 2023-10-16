@@ -25,7 +25,7 @@ class PredictionPipeline:
         if result[0] == 0:
             prediction = 'Healthy'
             return [f'image : {prediction}']
-        elif result[0] == 1:
+        elif result[0] == 2:
             prediction = 'Early Blight'
             return [f'image : {prediction}']
         else:
