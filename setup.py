@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "Leaf-Desease-Detector-End2End"
 AUTHOR_USER_NAME = "007kakashi"
-SRC_REPO = "src/cnnClassifier"
+SRC_REPO = "cnnClassifier"
 AUTHOR_EMAIL = "upendrasgosavi@gmail.com"
 
 

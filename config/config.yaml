@@ -16,7 +16,6 @@ prepare_base_model:
 
 
 
-
 prepare_callbacks:
   root_dir: artifacts/prepare_callbacks
   tensorboard_root_log_dir: artifacts/prepare_callbacks/tensorboard_log_dir
