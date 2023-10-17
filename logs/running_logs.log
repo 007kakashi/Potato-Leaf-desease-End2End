@@ -968,3 +968,365 @@ x==========x]
 [2023-10-16 19:58:14,666: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 19:58:14] "POST /predict HTTP/1.1" 200 -]
 [2023-10-16 20:00:29,237: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 20:00:29] "POST /predict HTTP/1.1" 200 -]
 [2023-10-16 20:00:42,332: INFO: _internal: 192.168.0.121 - - [16/Oct/2023 20:00:42] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 12:42:37,501: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-17 12:42:37,501: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-17 12:42:54,802: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 12:42:54] "GET / HTTP/1.1" 200 -]
+[2023-10-17 12:45:36,684: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-17 12:45:36,684: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-17 12:45:36,699: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-17 12:45:36,702: INFO: common: created directory at: artifacts]
+[2023-10-17 12:45:36,704: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-17 12:45:36,707: INFO: data_ingestion: File already exists of size: ~ 20642 KB]
+[2023-10-17 12:45:43,900: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-17 12:45:43,903: INFO: main: *******************]
+[2023-10-17 12:45:43,907: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-10-17 12:45:43,955: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-17 12:45:43,988: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-17 12:45:43,991: INFO: common: created directory at: artifacts]
+[2023-10-17 12:45:44,002: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-17 12:45:47,252: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-17 12:45:50,644: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-10-17 12:45:50,644: INFO: main: *******************]
+[2023-10-17 12:45:50,644: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-10-17 12:45:50,672: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-17 12:45:50,678: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-17 12:45:50,684: INFO: common: created directory at: artifacts]
+[2023-10-17 12:45:50,686: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-17 12:45:50,689: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-17 12:45:50,702: INFO: common: created directory at: artifacts\training]
+[2023-10-17 13:08:19,368: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-10-17 13:08:19,383: INFO: main: *******************]
+[2023-10-17 13:08:19,383: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-10-17 13:08:19,409: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-17 13:08:19,420: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-17 13:08:19,424: INFO: common: created directory at: artifacts]
+[2023-10-17 13:15:01,750: INFO: common: json file saved at: scores.json]
+[2023-10-17 13:15:01,750: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-10-17 13:19:08,031: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-17 13:19:08,031: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-17 13:19:32,839: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 13:19:32] "GET / HTTP/1.1" 200 -]
+[2023-10-17 13:19:47,541: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 13:19:47] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 13:19:59,972: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 13:19:59] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 13:20:14,404: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 13:20:14] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 13:21:34,382: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-17 13:21:34,382: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-17 13:21:34,405: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-17 13:21:34,417: INFO: common: created directory at: artifacts]
+[2023-10-17 13:21:34,425: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-17 13:21:45,168: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 21137678
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "3018953fda39d25f745a547addfd47d653799e3f5dfaaeca8a1c3e778fc37d06"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 5B1C:2CDDB0:2F588:4AD74:652E3D07
+Accept-Ranges: bytes
+Date: Tue, 17 Oct 2023 07:51:36 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100022-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1697529095.139770,VS0,VE1343
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 09c2b380fd82a2bf452188a212fc3d8eff53a94e
+Expires: Tue, 17 Oct 2023 07:56:36 GMT
+Source-Age: 1
+
+]
+[2023-10-17 13:21:50,264: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-17 13:21:50,280: INFO: main: *******************]
+[2023-10-17 13:21:50,291: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-10-17 13:21:50,347: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-17 13:21:50,364: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-17 13:21:50,364: INFO: common: created directory at: artifacts]
+[2023-10-17 13:21:50,414: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-17 13:21:53,191: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-17 13:21:56,311: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-10-17 13:21:56,311: INFO: main: *******************]
+[2023-10-17 13:21:56,311: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-10-17 13:21:56,332: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-17 13:21:56,339: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-17 13:21:56,348: INFO: common: created directory at: artifacts]
+[2023-10-17 13:21:56,381: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-17 13:21:56,384: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-17 13:21:56,405: INFO: common: created directory at: artifacts\training]
+[2023-10-17 13:23:13,569: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-17 13:23:13,585: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-17 13:23:13,598: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-17 13:23:13,599: INFO: common: created directory at: artifacts]
+[2023-10-17 13:23:13,602: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-17 13:23:13,603: INFO: data_ingestion: File already exists of size: ~ 20642 KB]
+[2023-10-17 13:23:19,562: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-17 13:23:19,578: INFO: main: *******************]
+[2023-10-17 13:23:19,578: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-10-17 13:23:19,578: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-17 13:23:19,592: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-17 13:23:19,594: INFO: common: created directory at: artifacts]
+[2023-10-17 13:23:19,596: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-17 13:23:23,070: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-17 13:23:24,135: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-10-17 13:23:24,137: INFO: main: *******************]
+[2023-10-17 13:23:24,137: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-10-17 13:23:24,137: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-17 13:23:24,157: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-17 13:23:24,159: INFO: common: created directory at: artifacts]
+[2023-10-17 13:23:24,161: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-17 13:23:24,163: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-17 13:23:24,172: INFO: common: created directory at: artifacts\training]
+[2023-10-17 14:47:21,152: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-17 14:47:21,162: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-17 14:47:29,606: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 14:47:29] "GET / HTTP/1.1" 200 -]
+[2023-10-17 14:47:49,411: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\pipeline\predict.py", line 16, in predict
+    model = load_model(os.path.join("model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\h5py\_hl\files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\h5py\_hl\files.py", line 235, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\h5f.pyx", line 102, in h5py.h5f.open
+OSError: Unable to synchronously open file (file signature not found)
+[2023-10-17 14:47:49,494: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 14:47:49] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-17 14:50:19,400: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-17 14:50:19,400: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-17 14:50:29,533: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 14:50:29] "GET / HTTP/1.1" 200 -]
+[2023-10-17 14:50:44,078: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\pipeline\predict.py", line 16, in predict
+    model = load_model(os.path.join("model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\h5py\_hl\files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\h5py\_hl\files.py", line 235, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\h5f.pyx", line 102, in h5py.h5f.open
+OSError: Unable to synchronously open file (file signature not found)
+[2023-10-17 14:50:44,094: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 14:50:44] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-17 14:52:19,242: INFO: _internal: 127.0.0.1 - - [17/Oct/2023 14:52:19] "GET / HTTP/1.1" 200 -]
+[2023-10-17 14:52:34,430: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\pipeline\predict.py", line 16, in predict
+    model = load_model(os.path.join("model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\h5py\_hl\files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\h5py\_hl\files.py", line 235, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\h5f.pyx", line 102, in h5py.h5f.open
+OSError: Unable to synchronously open file (file signature not found)
+[2023-10-17 14:52:34,485: INFO: _internal: 127.0.0.1 - - [17/Oct/2023 14:52:34] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-17 14:54:29,874: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-17 14:54:29,877: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-17 14:54:39,781: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 14:54:39] "GET / HTTP/1.1" 200 -]
+[2023-10-17 14:54:51,637: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\pipeline\predict.py", line 16, in predict
+    model = load_model(os.path.join("model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\h5py\_hl\files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\h5py\_hl\files.py", line 235, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\h5f.pyx", line 102, in h5py.h5f.open
+OSError: Unable to synchronously open file (file signature not found)
+[2023-10-17 14:54:51,661: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 14:54:51] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-17 14:56:51,768: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-17 14:56:51,768: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-17 14:57:07,982: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 14:57:07] "GET / HTTP/1.1" 200 -]
+[2023-10-17 14:57:16,576: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\pipeline\predict.py", line 16, in predict
+    model = load_model(os.path.join("artifacts","training", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\saving\legacy\save.py", line 234, in load_model
+    raise IOError(
+OSError: No file or directory found at model.h5
+[2023-10-17 14:57:16,618: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 14:57:16] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
