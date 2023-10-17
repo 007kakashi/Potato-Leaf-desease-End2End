@@ -1330,3 +1330,147 @@ Traceback (most recent call last):
     raise IOError(
 OSError: No file or directory found at model.h5
 [2023-10-17 14:57:16,618: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 14:57:16] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-17 17:39:39,367: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-17 17:39:39,377: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-17 17:39:53,281: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 17:39:53] "GET / HTTP/1.1" 200 -]
+[2023-10-17 17:40:57,513: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\pipeline\predict.py", line 16, in predict
+    model = load_model(os.path.join("artifacts","training", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\saving\legacy\save.py", line 234, in load_model
+    raise IOError(
+OSError: No file or directory found at artifacts\training\model.h5
+[2023-10-17 17:40:57,566: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 17:40:57] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-17 17:42:27,430: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-17 17:42:27,442: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-17 17:42:43,841: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 17:42:43] "GET / HTTP/1.1" 200 -]
+[2023-10-17 17:42:55,811: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML Projects\Potato-Leaf-Desease-End2End\src\cnnClassifier\pipeline\predict.py", line 16, in predict
+    model = load_model(os.path.join("artifacts","training", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\h5py\_hl\files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\envs\leaf_desease_detection\Lib\site-packages\h5py\_hl\files.py", line 235, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\h5f.pyx", line 102, in h5py.h5f.open
+OSError: Unable to synchronously open file (file signature not found)
+[2023-10-17 17:42:55,881: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 17:42:55] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-17 18:14:17,014: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-17 18:14:17,025: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-17 18:14:22,960: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:14:22] "GET / HTTP/1.1" 200 -]
+[2023-10-17 18:14:41,347: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:14:41] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:15:02,546: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:15:02] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:15:31,994: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:15:31] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:15:34,651: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:15:34] "GET / HTTP/1.1" 200 -]
+[2023-10-17 18:15:49,101: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:15:49] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:16:24,855: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:16:24] "GET / HTTP/1.1" 200 -]
+[2023-10-17 18:16:38,729: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001F9A6971A80> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-17 18:16:38,737: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:16:38] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:17:41,142: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:17:41] "GET / HTTP/1.1" 200 -]
+[2023-10-17 18:17:54,773: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001F9A68DBB00> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-17 18:17:54,781: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:17:54] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:18:14,021: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:18:14] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:18:36,035: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:18:36] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:18:59,818: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:18:59] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:19:20,165: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:19:20] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:20:14,577: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-17 18:20:14,577: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-17 18:23:00,718: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:23:00] "GET / HTTP/1.1" 200 -]
+[2023-10-17 18:23:20,794: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:23:20] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:23:34,409: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:23:34] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:23:56,148: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:23:56] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:24:24,221: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:24:24] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:25:05,718: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000021162CE19E0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-17 18:25:05,734: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:25:05] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:25:35,898: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000021162C4BCE0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-17 18:25:35,906: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:25:35] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:25:48,464: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:25:48] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:25:59,963: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:25:59] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:26:13,794: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:26:13] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:26:46,664: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:26:46] "GET / HTTP/1.1" 200 -]
+[2023-10-17 18:27:01,308: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:27:01] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:27:17,506: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:27:17] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:28:15,301: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.121:80]
+[2023-10-17 18:28:15,301: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-17 18:28:31,779: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:28:31] "GET / HTTP/1.1" 200 -]
+[2023-10-17 18:28:44,290: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:28:44] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:29:04,430: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:29:04] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:29:20,929: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:29:20] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:29:39,878: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:29:39] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:30:33,140: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000002463711CEA0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-17 18:30:33,140: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:30:33] "POST /predict HTTP/1.1" 200 -]
+[2023-10-17 18:30:59,904: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000024634CF2AC0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-17 18:30:59,904: INFO: _internal: 192.168.0.121 - - [17/Oct/2023 18:30:59] "POST /predict HTTP/1.1" 200 -]

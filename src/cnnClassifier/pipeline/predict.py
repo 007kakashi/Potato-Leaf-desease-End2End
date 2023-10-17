@@ -2,6 +2,7 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import os
+import joblib
 
 
 
@@ -13,7 +14,9 @@ class PredictionPipeline:
     
     def predict(self):
         # load model
-        model = load_model(os.path.join("artifacts","training", "model.h5"))
+        # model = load_model(os.path.join("artifacts","training", "model.h5"))
+
+        model = joblib.load(os.path.join("artifacts","training", "model.h5"))
 
         imagename = self.filename
         test_image = image.load_img(imagename, target_size = (224,224))
@@ -22,10 +25,10 @@ class PredictionPipeline:
         result = np.argmax(model.predict(test_image), axis=1)
         print(result)
 
-        if result[0] == 0:
+        if result[0] == 1:
             prediction = 'Healthy'
             return [f'image : {prediction}']
-        elif result[0] == 2:
+        elif result[0] == 0:
             prediction = 'Early Blight'
             return [f'image : {prediction}']
         else:
